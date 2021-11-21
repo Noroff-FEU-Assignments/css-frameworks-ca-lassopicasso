@@ -1,0 +1,87 @@
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background: radial-gradient(closest-side, #ffffff, #e5e5e5);
+  color: $dark;
+  font-family: "Latio", sans-serif;
+}
+
+h1,
+.navbar-brand {
+  color: $primary;
+  font-family: "Playfair Display";
+}
+
+h1 {
+  font-size: 34px;
+}
+
+.navbar {
+  &-brand {
+    font-style: italic;
+    color: $primary !important;
+  }
+  .nav-link {
+    padding: 2px;
+    color: $black !important;
+  }
+
+  .active {
+    background-color: $white !important;
+    border-radius: 5px;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  .form-control {
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+  }
+  .btn {
+    border-radius: 0px 4px 4px 0px;
+    border-color: $primary;
+    background: $primary;
+    color: $white;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    z-index: 10;
+    top: 3rem;
+    background: $secondary;
+    border-radius: 0;
+    left: 0;
+    width: 100vw;
+    height: 280px;
+  }
+  .navbar .active {
+    border-radius: 0;
+  }
+  .nav-link {
+    padding: 10px 35px !important;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .navbar-search {
+    padding: 20px !important;
+  }
+}
+
+Footer {
+  background: $white;
+  padding: 10px;
+  margin-top: 50px;
+  color: $dark;
+
+  .fa-youtube {
+    padding-left: 15px;
+  }
+
+  .fab {
+    font-size: 35px;
+  }
+}

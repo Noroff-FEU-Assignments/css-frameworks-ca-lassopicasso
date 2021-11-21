@@ -1,0 +1,27 @@
+/* Carousel*/
+
+.carousel {
+  max-height: 50vh !important;
+
+  &-item {
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-indicators {
+  [data-bs-target] {
+    height: $carousel-indicator-width;
+    opacity: 1;
+    border: 0;
+  }
+  .active {
+    background: $primary;
+  }
+}

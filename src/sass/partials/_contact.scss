@@ -1,0 +1,31 @@
+.fa-map-marker-alt {
+  width: 21.34px;
+  padding-top: 5px;
+}
+
+.form {
+  background: $secondary;
+  border-radius: 3px;
+  padding: 20px;
+
+  Button {
+    background-color: $dark;
+    width: 100%;
+    color: $white;
+    border-color: $dark;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .form-check-input {
+    background: $primary;
+    height: 33px;
+    width: 34px;
+  }
+}
+
+.list-group-item {
+  background: none;
+  color: $dark;
+}
