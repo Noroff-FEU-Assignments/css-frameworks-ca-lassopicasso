@@ -1,0 +1,32 @@
+.accordion {
+  &-button {
+    background: $white !important;
+    border: none;
+    font-size: 19px;
+    color: $primary;
+    &::before,
+    &::after {
+      border: none;
+      content: none;
+    }
+    &:not(.collapsed) {
+      border: solid 2px transparent;
+      border-bottom-color: $primary;
+    }
+  }
+  &__body {
+    background: radial-gradient(closest-side, #ffffff, #e5e5e5);
+    .social-media div {
+      margin: 15px;
+      color: $black;
+    }
+    .social-media .fab {
+      font-size: 25px;
+    }
+    .tab-img {
+      background-size: cover;
+      background-position: center center;
+      height: 180px;
+    }
+  }
+}

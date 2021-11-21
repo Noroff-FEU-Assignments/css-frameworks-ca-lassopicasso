@@ -1,13 +1,14 @@
 import React from "react";
 import ContentCarousel from "./ContentCarousel";
+import Accordion from "./ContentAccordions";
 import ContentTabs from "./ContentTabs";
+
 import Container from "react-bootstrap/Container";
 
 function Home() {
   return (
-    <div>
+    <>
       <ContentCarousel />
-
       <Container className="mt-4">
         <div className="mb-5">
           <h1>We do YAY things</h1>
@@ -16,9 +17,10 @@ function Home() {
             pretium lacinia magna. Donec mi orci, sollicitudin in luctus a, varius eget massa.
           </p>
         </div>
+        <Accordion />
         <ContentTabs />
       </Container>
-    </div>
+    </>
   );
 }
 

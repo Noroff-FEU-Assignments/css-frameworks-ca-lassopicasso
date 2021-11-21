@@ -1,6 +1,12 @@
-.fa-map-marker-alt {
-  width: 21.34px;
-  padding-top: 5px;
+.listgroup {
+  &__item {
+    background: none;
+    color: $dark;
+  }
+  &__mapMarker {
+    width: 21.34px;
+    padding-top: 5px;
+  }
 }
 
 .form {
@@ -8,7 +14,7 @@
   border-radius: 3px;
   padding: 20px;
 
-  Button {
+  &__button {
     background-color: $dark;
     width: 100%;
     color: $white;
@@ -18,14 +24,9 @@
     }
   }
 
-  .form-check-input {
+  &-check-input {
     background: $primary;
     height: 33px;
     width: 34px;
   }
-}
-
-.list-group-item {
-  background: none;
-  color: $dark;
 }

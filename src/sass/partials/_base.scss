@@ -17,6 +17,7 @@ h1 {
   font-size: 34px;
 }
 
+//Nav
 .navbar {
   &-brand {
     font-style: italic;
@@ -70,6 +71,8 @@ h1 {
     padding: 20px !important;
   }
 }
+
+//Footer
 
 Footer {
   background: $white;

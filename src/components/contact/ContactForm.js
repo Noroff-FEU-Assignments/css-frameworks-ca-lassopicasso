@@ -30,10 +30,10 @@ function ContactForm() {
           <Form.Control as="textarea" rows={5} />
         </Form.Group>
         <div as="li" className="d-flex align-items-center">
-          <Form.Check classList="form__checkbox" type="checkbox" />
+          <Form.Check type="checkbox" />
           <div className="ps-2">Allow us to sell your personal details to whomever we want</div>
         </div>
-        <Button className="mt-3" type="submit">
+        <Button className="mt-3 form__button" type="submit">
           Submit
         </Button>
       </Form>

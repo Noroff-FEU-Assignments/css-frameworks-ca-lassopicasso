@@ -15,7 +15,7 @@ import Button from "react-bootstrap/Button";
 function ContentNav() {
   return (
     <Router>
-      <Navbar bg="secondary" expand="lg">
+      <Navbar bg="secondary" expand="lg" className="nav">
         <Container>
           <Navbar.Brand href="/">The YAY Company</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

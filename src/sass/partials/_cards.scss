@@ -1,29 +1,33 @@
 .btn-group {
-  .btn-primary {
+  &__btn {
     color: $primary;
     background: $white;
+    &--active {
+      color: $white;
+      background: $primary;
+    }
   }
-  .active {
+}
+
+.card {
+  &__btn {
+    width: 100%;
+    position: relative;
+    border: none;
     color: $white;
-    background: $primary;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: $dark;
+      width: 30px;
+      height: 100%;
+      border: solid $dark 10px;
+      border-radius: 0 3px 3px 0px;
+    }
   }
-}
-
-.card .btn-primary {
-  width: 100%;
-  position: relative;
-  border: none;
-  color: $white;
-}
-
-.card-body .btn-primary:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: $dark;
-  width: 30px;
-  height: 100%;
-  border: solid $dark 10px;
-  border-radius: 0 3px 3px 0px;
+  &__title {
+    color: $black;
+  }
 }
